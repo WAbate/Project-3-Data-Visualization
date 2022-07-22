@@ -37,7 +37,9 @@ function init(){
           '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors' +
           ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>',
       maxZoom: 18
+
   }).addTo(map);
+
  
     //Create Bar Chart
     var trace1 = {
