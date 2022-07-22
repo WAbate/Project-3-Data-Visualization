@@ -31,29 +31,13 @@ function init(){
     var otu_labels = result.otu_labels; 
    
     //Create World Map -- Will
-    var trace1 = {
-        x: otu_ids,
-        y: sample_values,
-        text: otu_labels,
-        mode: 'markers',
-        marker: {
-        size: sample_values,
-        color: otu_ids,
-        colorscale:"Rainbow"
-        }
-    };
-  
-    var data = [trace1];
-
-    var layout = {
-        title: 'Bacteria Cultures per Sample',
-        showlegend: false,
-        hovermode: 'closest',
-        xaxis: {title:"OTU (Operational Taxonomic Unit) ID " +sample},
-        font: { color: "Black", family: "Arial" },
-        margin: {t:30}
-    };
-    Plotly.newPlot('bubble', data, layout); 
+    var map = L.map('map').setView([50.84673, 4.35247], 1);
+    L.tileLayer('https://tile.openstreetmap.be/osmbe/{z}/{x}/{y}.png', {
+      attribution:
+          '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors' +
+          ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>',
+      maxZoom: 18
+  }).addTo(map);
  
     //Create Bar Chart
     var trace1 = {
@@ -86,7 +70,4 @@ function init(){
   }
   
   init();
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
+
