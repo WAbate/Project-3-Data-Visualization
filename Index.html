@@ -8,7 +8,11 @@
   <title>Billionaires</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
-  
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jscharting.com/latest/jscharting.js"></script>
 </head>
 
 <body>
@@ -22,14 +26,6 @@
     </div>
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
-          <h5>Billionaire Name:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Billionaire Info</h3>
-          </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
@@ -48,16 +44,8 @@
   </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
- 
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-  crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-  crossorigin=""></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/js/map.js"></script>
-  <script src="static/js/pie.js"></script>
+  <!-- <script src="static/js/pie.js"></script> -->
   
 </body>
 
