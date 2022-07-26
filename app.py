@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 from flask import Flask, render_template, redirect, jsonify
 from flask import Response,json
+=======
+from Flask import Flask, render_template, redirect, jsonify
+from Flask import Response,json
+>>>>>>> c4aa41818d383fc3e4b80800caa1be97d5337dea
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
