@@ -4,6 +4,21 @@
     width: 1115px;
 }
 
+.col-lg-12 {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+svg { 
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
 .aliceblue-text p {
     color: aliceblue;
 }
@@ -13,9 +28,11 @@
 }
 
 .header {
-    font-style: Montserrat;
-    font-size: 40px;
+    font-family: 'Bevan', cursive;
+    height: 200px;
+    font-size: 70px;
     color:white;
+    border-bottom: 4px solid whitesmoke;
     background-color: black;
 }
 
@@ -24,6 +41,7 @@
     font-size: 17px;
     color:white;
     background-color: black;
+    border-top: 4px solid whitesmoke;
 }
 
 body {
